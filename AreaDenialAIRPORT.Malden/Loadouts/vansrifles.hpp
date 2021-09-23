@@ -1,0 +1,1 @@
+#define _srifle "arifle_SDAR_F","srifle_EBR_F","srifle_DMR_01_F","srifle_DMR_03_F","srifle_DMR_03_woodland_F","srifle_DMR_04_F","srifle_DMR_07_blk_F","srifle_DMR_07_ghex_F","arifle_SPAR_03_blk_F","arifle_ARX_blk_F","srifle_DMR_04_Tan_F","srifle_DMR_06_olive_F"

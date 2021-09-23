@@ -1,0 +1,1 @@
+#define _vanreconmags                                                  "20Rnd_762x51_Mag","20Rnd_556x45_UW_mag","30Rnd_556x45_Stanag","10Rnd_762x54_Mag","10Rnd_127x54_Mag","20Rnd_650x39_Cased_Mag_F"

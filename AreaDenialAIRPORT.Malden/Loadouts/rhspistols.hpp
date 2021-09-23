@@ -1,0 +1,1 @@
+#define _rhspistols "rhsusf_weap_m1911a1","rhsusf_weap_glock17g4","rhsusf_weap_m9","rhs_weap_pya","rhs_weap_makarov_pm","rhs_weap_6p53","rhs_weap_cz99","rhs_weap_makarov_pmm"

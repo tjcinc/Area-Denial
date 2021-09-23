@@ -1,0 +1,1 @@
+#define _rhsreconmags               "rhsusf_5Rnd_762x51_m993_Mag","rhsusf_5Rnd_300winmag_xm2010","rhs_5Rnd_338lapua_t5000","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N14","rhs_20rnd_9x39mm_SP6","rhs_20rnd_9x39mm_SP5","SMA_20Rnd_762x51mm_M80A1_EPR"

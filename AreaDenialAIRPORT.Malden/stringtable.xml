@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="RGO">
+<Package name="PvP">
+<Container name="MAD">
+
+
+<Key ID="STR_PISTOL"> 
+	<Original>MADPISTOL</Original>
+	<Russian>MADPISTOL</Russian>
+	<Portuguese>MADPISTOL</Portuguese>
+</Key> 
+
+<Key ID="STR_SLEADER">
+	<Original> 1.Squad leader</Original>
+    <Russian>Рембо</Russian> 
+<Portuguese>1.Líder do esquadrão</Portuguese>    
+</Key>
+
+<Key ID="STR_ASSAULT"> 
+	<Original>1.Assault</Original>
+	<Russian>нападение</Russian>
+	<Portuguese>Assalto</Portuguese>
+</Key> 
+
+<Key ID="STR_GUNNER">
+	<Original>2.Gunner</Original>
+	<Russian>Пулемётчик</Russian>
+	<Portuguese>2.Artilheiro</Portuguese>
+</Key>
+
+<Key ID="STR_GRENADIER">
+	<Original>3.Grenadier</Original>
+	<Russian>Боец (ГП)</Russian>
+	<Portuguese>2.Granadeiro</Portuguese>
+</Key>
+
+<Key ID="STR_RECON">
+	<Original>4.Scout</Original>
+    <Russian>Разведчик</Russian>  
+	<Portuguese>3.Scout</Portuguese>	
+</Key>
+
+<Key ID="STR_HEAVY_AT">
+	<Original>5.Anti-Tank</Original>
+    <Russian>Ракетомётчик </Russian>
+	<Portuguese>4.Lançador de foguetes</Portuguese>
+</Key>
+
+<Key ID="STR_ENGINEER">
+	<Original>2.Gunner</Original>
+    <Russian>Инженер</Russian> 
+	<Portuguese>Engenheiro</Portuguese>    
+</Key>
+ 
+ <Key ID="STR_MEDIC">
+	<Original>Medic</Original>
+    <Russian>Санитар</Russian>
+	<Portuguese>Médico</Portuguese>
+</Key>
+
+<Key ID="STR_LIGHT_AT">
+	<Original>Rocket Launchers</Original>
+    <Russian>Ракетомётчик</Russian>
+	<Portuguese>Lançador de foguetes</Portuguese>
+</Key>
+
+<Key ID="STR_SAPPER">
+    <Original>Sapper</Original>
+    <Russian>Сапёр</Russian>
+	<Portuguese>sapador</Portuguese>
+</Key>
+
+<Key ID="STR_SNIPER">
+    <Original>3.Sniper</Original>
+    <Russian>Снайпер</Russian>
+	<Portuguese>franco-atirador</Portuguese>
+</Key>
+
+ <Key ID="STR_RHSPISTOL"> 
+	<Original>HANDGUN</Original>
+	<Russian>MADPISTOL</Russian>
+	<Portuguese>MADPISTOL</Portuguese>
+</Key> 
+
+<Key ID="STR_RHSSLEADER">
+	<Original> 1.Squad leader</Original>
+    <Russian>Рембо</Russian> 
+<Portuguese>1.Líder do esquadrão</Portuguese>    
+</Key>
+
+<Key ID="STR_RHSASSAULT"> 
+	<Original>1.Assault</Original>
+	<Russian>нападение</Russian>
+	<Portuguese>Assalto</Portuguese>
+</Key> 
+
+<Key ID="STR_RHSGUNNER">
+	<Original>2.MG</Original>
+	<Russian>Пулемётчик</Russian>
+	<Portuguese>2.Artilheiro</Portuguese>
+</Key>
+
+<Key ID="STR_RHSGRENADIER">
+	<Original>3.GL</Original>
+	<Russian>Боец (ГП)</Russian>
+	<Portuguese>2.Granadeiro</Portuguese>
+</Key>
+
+<Key ID="STR_RHSRECON">
+	<Original>4.SNIPER</Original>
+    <Russian>Разведчик</Russian>  
+	<Portuguese>3.Scout</Portuguese>	
+</Key>
+
+<Key ID="STR_RHSHEAVY_AT">
+	<Original>5.AT/AA</Original>
+    <Russian>Ракетомётчик </Russian>
+	<Portuguese>4.Lançador de foguetes</Portuguese>
+</Key> 
+
+<Key ID="STR_WWASSAULT"> 
+	<Original>1.SMG/GL</Original>
+	<Russian>нападение</Russian>
+	<Portuguese>Assalto</Portuguese>
+</Key> 
+
+<Key ID="STR_WWGUNNER">
+	<Original>2.Machinegunner</Original>
+	<Russian>Пулемётчик</Russian>
+	<Portuguese>2.Artilheiro</Portuguese>
+</Key>
+
+<Key ID="STR_WWHEAVY_AT">
+	<Original>4.Rocket-launcher</Original>
+    <Russian>Ракетомётчик </Russian>
+	<Portuguese>4.Lançador de foguetes</Portuguese>
+</Key>
+
+<Key ID="STR_WWRECON">
+	<Original>3.Recon</Original>
+    <Russian>Разведчик</Russian>  
+	<Portuguese>3.Scout</Portuguese>	
+</Key> 
+
+<Key ID="STR_CUPSLEADER">
+	<Original> 1.Squad leader</Original>
+    <Russian>Рембо</Russian> 
+<Portuguese>1.Líder do esquadrão</Portuguese>    
+</Key>
+
+<Key ID="STR_CUPASSAULT"> 
+	<Original>1.Assault</Original>
+	<Russian>нападение</Russian>
+	<Portuguese>Assalto</Portuguese>
+</Key> 
+
+<Key ID="STR_CUPGUNNER">
+	<Original>2.MG</Original>
+	<Russian>Пулемётчик</Russian>
+	<Portuguese>2.Artilheiro</Portuguese>
+</Key>
+
+<Key ID="STR_CUPGRENADIER">
+	<Original>3.GL</Original>
+	<Russian>Боец (ГП)</Russian>
+	<Portuguese>2.Granadeiro</Portuguese>
+</Key>
+
+<Key ID="STR_CUPRECON">
+	<Original>4.SNIPER</Original>
+    <Russian>Разведчик</Russian>  
+	<Portuguese>3.Scout</Portuguese>	
+</Key>
+
+<Key ID="STR_CUPHEAVY_AT">
+	<Original>5.AT/AA</Original>
+    <Russian>Ракетомётчик </Russian>
+	<Portuguese>4.Lançador de foguetes</Portuguese>
+</Key> 
+
+<Key ID="STR_VNSLEADER">
+	<Original> 1.Squad leader</Original>
+    <Russian>Рембо</Russian> 
+<Portuguese>1.Líder do esquadrão</Portuguese>    
+</Key>
+
+<Key ID="STR_VNGUNNER">
+	<Original>2.MG</Original>
+	<Russian>Пулемётчик</Russian>
+	<Portuguese>2.Artilheiro</Portuguese>
+</Key>
+
+<Key ID="STR_VNGRENADIER">
+	<Original>3.GL</Original>
+	<Russian>Боец (ГП)</Russian>
+	<Portuguese>2.Granadeiro</Portuguese>
+</Key>
+
+<Key ID="STR_VNRECON">
+	<Original>4.SNIPER</Original>
+    <Russian>Разведчик</Russian>  
+	<Portuguese>3.Scout</Portuguese>	
+</Key>
+
+<Key ID="STR_VNHEAVY_AT">
+	<Original>5.AT/AA</Original>
+    <Russian>Ракетомётчик </Russian>
+	<Portuguese>4.Lançador de foguetes</Portuguese>
+</Key> 
+
+
+
+
+<Key ID="STR_MADINAREA">
+	<Original> PLAYERS IN AREA </Original>
+	<Russian> ИГРОКОВ В ЗОНЕ </Russian>
+	<Portuguese> JOGADORES NA ÁREA </Portuguese>
+</Key>
+
+<Key ID="STR_MADPLAYERS">
+	<Original> Total players: </Original>
+	<Russian> Всего игроков: </Russian>
+	<Portuguese> Total players: </Portuguese>
+</Key>
+
+ <Key ID="STR_PARACHUTE"> 
+	 <Original>Parachute </Original>
+	 <Russian>Парашют </Russian>
+	 <Portuguese>Pára-quedas</Portuguese>
+</Key>
+
+ <Key ID="STR_PARACHUTE1"> 
+ <Original>  Open Parachute </Original>
+ <Russian>Открытый парашют</Russian>
+ <Portuguese>Abra o pára-quedas</Portuguese>
+</Key>
+
+<Key ID="STR_A_PC">
+	<Original> Artillery computer </Original>
+	<Russian> Артиллерийский Компьютер </Russian>
+	<Portuguese>Computador de artilharia</Portuguese>
+</Key>
+
+<Key ID="STR_RELOAD">
+	<Original> Reload</Original>
+	<Russian> Перезарядить </Russian>
+	<Portuguese>recarregar</Portuguese>
+</Key>
+
+<Key ID="STR_HINT1">
+	<Original> F1- HELP</Original>
+	<Russian> F1- ПОМОЩЬ </Russian>
+	<Portuguese>F1- Socorro</Portuguese>
+</Key>
+<Key ID="STR_HINT2">
+	<Original> GPS ZOOM IN CTRL+Z</Original>
+	<Russian> GPS ZOOM IN CTRL+Z</Russian>
+	<Portuguese>GPS ZOOM IN CTRL+Z</Portuguese>
+</Key>
+<Key ID="STR_HINT3">
+	<Original> GPS ZOOM OUT CTRL+X</Original>
+	<Russian> GPS ZOOM OUT CTRL+X</Russian>
+	<Portuguese>GPS ZOOM OUT CTRL+X</Portuguese>
+</Key>
+<Key ID="STR_HINT4">
+	<Original> GPS ZOOM IN CTRL+Z </Original>
+	<Russian> GPS ZOOM IN CTRL+Z</Russian>
+	<Portuguese>GPS ZOOM IN CTRL+Z</Portuguese>
+</Key>
+<Key ID="STR_HINT5">
+	<Original>GPS ZOOM OUT CTRL+X</Original>
+	<Russian>GPS ZOOM OUT CTRL+X</Russian>
+	<Portuguese>GPS ZOOM OUT CTRL+X</Portuguese>
+</Key>
+<Key ID="STR_HINT6">
+	<Original> RESPAWN IN MOBILE RESPAWN</Original>
+	<Russian> ВОЗРОЖДАЙТЕСЬ В МОБИЛЬНОМ РЕСПЕ</Russian>
+	<Portuguese>REPARAÇÃO EM REPARAÇÃO MÓVEL</Portuguese>
+</Key>
+<Key ID="STR_HINT7">
+	<Original> KILL INSIDE SECTOR !!</Original>
+	<Russian> KILL INSIDE SECTOR !!</Russian>
+	<Portuguese>KILL INSIDE SECTOR !!</Portuguese>
+</Key>
+<Key ID="STR_HINT8">
+	<Original>ACTIONS MENU -SCROLLWHEEL</Original>
+	<Russian>ACTIONS MENU -SCROLLWHEEL</Russian>
+</Key>
+<Key ID="STR_HINT9">
+	<Original> </Original>
+	<Russian> </Russian>
+</Key>
+<Key ID="STR_HINT10">
+	<Original> </Original>
+	<Russian> </Russian>
+</Key>
+<Key ID="STR_RETURN">
+	<Original>BACK TO AO</Original>
+	<Russian>BACK TO AO</Russian>
+</Key>
+<Key ID="STR_MISSIONTYPE">
+	<Original> Area Denial</Original>
+	<Russian> Захват территории</Russian>
+	<Portuguese>Negação de área</Portuguese>
+</Key>
+<Key ID="STR_MISSIONINFO">
+	<Original> HOLD THE MIDDLE ZONE</Original>
+	<Russian> УДЕРЖИВАЙТЕ ЦЕНТРАЛЬНУЮ ЗОНУ</Russian>
+	<Portuguese>MANTENHA A ZONA MÉDIA</Portuguese>
+</Key>
+<Key ID="STR_MISSIONINFO1">
+	<Original> Kill INSIDE zone to take enemy Ticket </Original>
+	<Russian> Убийство в зоне забирает вражеский билет</Russian>
+	<Portuguese>Mate a zona DENTRO para receber o ingresso inimigo</Portuguese>
+</Key>
+
+<Key ID="STR_MISSIONCAMPER">
+	<Original> NO SPAWNCAMPING</Original>
+	<Russian> НЕ КЕМПЕРИТЕ РЕСП ВРАГА</Russian>
+	<Portuguese>SEM CAMPISMO</Portuguese>
+</Key>
+<Key ID="STR_MISSIONHALO">
+	<Original> If you wish to HALO</Original>
+	<Russian> Если хотите отреспиться с парашютом</Russian>
+	<Portuguese>Se você deseja HALO</Portuguese>
+</Key>
+
+<Key ID="STR_MISSIONHALO1">
+	<Original> PRESS [CTRL+RIGHT MOUSE BUTTON] TO SWITCH BETWEEN AIR/GROUND </Original>
+	<Russian> НАЖМИТЕ [CTRL+ ПРАВАЯ КНОПКА МЫШИ] ДЛЯ ПЕРЕКЛЮЧЕНИЯ РЕСПА МЕЖДУ ВОЗДУХОМ/ЗЕМЛЕЙ</Russian>
+	<Portuguese>PRESSIONE [CTRL + BOTÃO DIREITO DO MOUSE] PARA COMUTAR ENTRE AR / TERRA</Portuguese>
+</Key>
+
+
+<Key ID="STR_NOSPAWNCAMPING">
+	<Original> NO SPAWNCAMPING - GO FIGHT TO MAIN SECTOR</Original>
+	<Russian> ХВАТИТ КЕМПЕРИТЬ - ПРОВАЛИВАЙ В ЦЕНТРАЛЬНЫЙ СЕКТОР</Russian>
+	<Portuguese>SEM CAMPISMO - Luta pelo setor</Portuguese>
+</Key>
+
+<Key ID="STR_RAIDEN">
+	<Original> Raiden is coming</Original>
+	<Russian> Райден идёт наказать непослушного кемпера</Russian>
+	<Portuguese>Raiden está vindo</Portuguese>
+</Key>
+<Key ID="STR_STOP">
+	<Original> !! STOP !! TURN AROUND</Original>
+	<Russian> !! СТОЯТЬ !! РАЗВОРАЧИВАЙСЯ НАЗАД</Russian>
+	<Portuguese>!!Pare!! INVERSÃO DE MARCHA</Portuguese>
+</Key>
+
+<Key ID="STR_ARMOREND">
+	<Original> ARMOR END:</Original>
+	<Russian> БРОНЯ ЗАКАНЧИВАЕТСЯ ЧЕРЕЗ: </Russian>
+	<Portuguese>Extremidade da armadura</Portuguese>
+</Key>
+
+<Key ID="STR_ARMORDISABLED">
+	<Original> ARMOR DISABLED</Original>
+	<Russian> БРОНЯ ЗАКОНЧИЛАСЬ </Russian>
+	<Portuguese>Armadura desativada</Portuguese>
+</Key>
+
+<Key ID="STR_MERC_ROPE">
+	<Original> Use rope (R) W/S - UP/DOWN</Original>
+	<Russian> Использовать веревку (R) W/S - ВВЕРХ/ВНИЗ</Russian>
+</Key>
+
+
+<Key ID="STR_MINE">
+	<Original>Mine</Original>
+	<Russian>Мина растяжка</Russian>
+	<Portuguese>Meu</Portuguese>
+</Key>
+
+<Key ID="STR_WPNB">
+	<Original>Weapon shoulder/hand</Original>
+	<Russian>Оружие на плечо/в руки</Russian>
+	<Portuguese>Ombro de arma / mão</Portuguese>
+</Key>
+
+<Key ID="STR_DRAGDROP">
+	<Original>Drag/Drop</Original>
+	<Russian>Тянуть/поставить</Russian>
+	<Portuguese>Arraste e solte</Portuguese>
+</Key>
+
+<Key ID="STR_GETGUNNER">
+	<Original>Get in gunner</Original>
+	<Russian>На место стрелка</Russian>
+	<Portuguese>
+Entre no artilheiro</Portuguese>
+</Key>
+
+<Key ID="STR_A3_Arsenal">
+                <Original>Arsenal</Original>
+            </Key>
+
+
+
+</Container>
+</Package>
+
+</Project>

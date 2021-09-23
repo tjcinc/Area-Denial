@@ -1,0 +1,1 @@
+#define _smgwest                                                                                                                                             "LIB_MP40","LIB_MP38","LIB_MP44"

@@ -1,0 +1,1 @@
+#define _rifleglwest                                                                                                                               "LIB_MP44_GW","LIB_K98_GW","LIB_K98_Late_GW"

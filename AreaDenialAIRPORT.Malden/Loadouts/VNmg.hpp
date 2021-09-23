@@ -1,0 +1,1 @@
+#define _vnmachgun                                                                                                                           "vn_rpd","vn_rpd_shorty","vn_rpd_shorty_01","vn_dp28","vn_pk","vn_m60","vn_m60_shorty","vn_m60_shorty_camo"

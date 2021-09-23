@@ -1,0 +1,1 @@
+#define _riflegl "arifle_AK12_GL_halloween_AM","arifle_CTAR_GL_blk_F","arifle_CTAR_GL_hex_F","arifle_Katiba_GL_F","arifle_Mk20_GL_plain_F","arifle_Mk20_GL_F","arifle_MX_GL_F","arifle_MX_GL_Black_F","arifle_SPAR_01_GL_blk_F","arifle_SPAR_01_GL_khk_F","arifle_TRG21_GL_F","arifle_MX_GL_khk_F"

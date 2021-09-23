@@ -1,0 +1,1 @@
+#define _hmgusuk                                                                                                                         "LIB_M1919A4","LIB_M1918A2_BAR","LIB_Bren_Mk2","LIB_M1919A6"

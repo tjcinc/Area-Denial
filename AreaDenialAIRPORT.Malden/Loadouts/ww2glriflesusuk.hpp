@@ -1,0 +1,1 @@
+ #define _rifleglusuk                                                                                                          "LIB_M1_Garand_M7","LIB_LeeEnfield_No4_CUP","LIB_LeeEnfield_No1_CUP"

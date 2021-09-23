@@ -1,0 +1,1 @@
+#define _vnpacksO	                                                                                          "vn_o_pack_01","vn_o_pack_02","vn_o_pack_03","vn_o_pack_04","vn_o_pack_05","vn_o_pack_06","vn_o_pack_07","vn_o_pack_08","vn_o_pack_03_rpg7_sks_pl","vn_o_pack_02_ppsh_pl"

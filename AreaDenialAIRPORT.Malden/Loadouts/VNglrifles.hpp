@@ -1,0 +1,1 @@
+#define _vnriflegl                                                                                                                "vn_sks_gl","vn_m1carbine_gl","vn_m2carbine_gl","vn_m4956_gl","vn_m16_xm148","vn_xm177_xm148","vn_xm177_xm148_camo","vn_m79"

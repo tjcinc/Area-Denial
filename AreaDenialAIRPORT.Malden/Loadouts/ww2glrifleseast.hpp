@@ -1,0 +1,1 @@
+#define _riflegleast                                                                                                                                         "LIB_M9130_DYAKONOV"

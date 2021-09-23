@@ -1,0 +1,1 @@
+#define _pistoleast                                                                                                                                           "LIB_TT33", "LIB_M1895","LIB_FLARE_PISTOL"

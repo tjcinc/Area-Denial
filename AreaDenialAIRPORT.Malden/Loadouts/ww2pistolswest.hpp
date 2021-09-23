@@ -1,0 +1,1 @@
+#define _pistolwest                                                                                                  "LIB_P38","LIB_P08","LIB_M1896","LIB_WaltherPPK","LIB_M1908","LIB_FLARE_PISTOL"

@@ -1,0 +1,1 @@
+#define _hmgwest                                                                                                                                                     "LIB_MG42","LIB_MG34"

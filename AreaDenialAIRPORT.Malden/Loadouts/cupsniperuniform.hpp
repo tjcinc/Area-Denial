@@ -1,0 +1,1 @@
+#define _cupsniper   "CUP_U_B_BAF_MTP_GHILLIE","CUP_U_B_BAF_DPM_GHILLIE","CUP_U_B_BAF_DDPM_GHILLIE","CUP_U_B_GER_Ghillie","CUP_U_B_GER_Fleck_Ghillie","CUP_U_B_USMC_Ghillie_WDL","CUP_U_B_CZ_WDL_Ghillie","CUP_U_B_CZ_DST_Ghillie","CUP_U_B_USArmy_Ghillie","CUP_U_O_TK_Ghillie","CUP_U_O_TK_Ghillie_Top","CUP_U_O_RUS_Ghillie"                     

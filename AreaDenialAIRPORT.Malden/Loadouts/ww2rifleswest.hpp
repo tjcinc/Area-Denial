@@ -1,0 +1,1 @@
+ #define _riflewest "LIB_MP44","LIB_K98","LIB_G3340","LIB_FG42G","LIB_G43","LIB_G41","LIB_K98_Bayonet","LIB_K98_Late","LIB_K98_Late_Bayonet","LIB_G3340_Bayonet","LIB_G41_Bayonet","LIB_PTRD"

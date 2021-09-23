@@ -1,0 +1,1 @@
+#define _vnssgun                                                                                                                                                        "vn_m45","vn_m45_fold","vn_m45_camo","vn_m45_sd","vn_mp40"

@@ -1,0 +1,1 @@
+#define _vnlauncher                                                                                                                                                                                      "vn_rpg2","vn_sa7","vn_sa7b","vn_rpg7","vn_m127"

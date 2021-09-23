@@ -1,0 +1,1 @@
+#define _machgun "arifle_CTARS_blk_F","LMG_03_F","arifle_CTARS_hex_F","LMG_Mk200_F","MMG_01_hex_F","arifle_SPAR_02_blk_F","arifle_SPAR_02_khk_F","MMG_02_black_F","LMG_Zafir_F","arifle_MX_SW_F","MMG_01_hex_ARCO_LP_F","MMG_01_tan_F","arifle_MX_SW_khk_F","arifle_CTARS_ghex_F","arifle_MX_SW_F"

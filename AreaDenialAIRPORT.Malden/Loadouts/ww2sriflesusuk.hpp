@@ -1,0 +1,1 @@
+ #define _sniperusuk                                                                                                                           "LIB_M1903A4_Springfield","LIB_LeeEnfield_No4_Scoped" 

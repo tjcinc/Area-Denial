@@ -1,0 +1,1 @@
+#define _rhssniper                                                                                                                                            "U_I_FullGhillie_lsh","U_B_FullGhillie_lsh","U_B_FullGhillie_ard","U_O_FullGhillie_ard","rhsusf_acc_LEUPOLDMK4_2","rhsusf_acc_LEUPOLDMK4_d","rhsusf_acc_LEUPOLDMK4","rhsusf_acc_M8541_mrds","rhs_acc_dh520x56"

@@ -1,0 +1,1 @@
+ #define _magsgl                                                                                                           "LIB_NB39","LIB_1Rnd_G_SPRGR_30","LIB_1Rnd_G_PZGR_30","LIB_1Rnd_G_PZGR_40" ,"LIB_1Rnd_G_DYAKONOV", "LIB_1Rnd_G_Mk2","LIB_1Rnd_G_M9A1","LIB_1Rnd_G_MillsBomb"

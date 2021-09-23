@@ -1,0 +1,1 @@
+ #define _smgusuk                                                         "LIB_M1A1_Thompson","LIB_M1928_Thompson","LIB_M3_GreaseGun","LIB_Sten_Mk2","LIB_M1928A1_Thompson","LIB_Sten_Mk5","LIB_Sten_Mk5_Bayonet","LIB_M1A1_Carbine"

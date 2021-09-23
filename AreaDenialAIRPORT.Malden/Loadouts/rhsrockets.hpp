@@ -1,0 +1,1 @@
+#define _rhsrockets    "rhs_rpg7_PG7VR_mag","rhs_fim92_mag","rhs_mag_smaw_HEAA","rhs_mag_9k38_rocket","rhs_m136_mag","rhs_m136_hedp_mag","rhs_m136_hp_mag","rhs_fgm148_magazine_AT","rhs_mag_smaw_HEDP","rhs_mag_smaw_SR","rhs_rpg26_mag","rhs_rshg2_mag","rhs_rpg18_mag","rhs_rpg7_PG7VL_mag","rhs_rpg7_TBG7V_mag","rhs_rpg7_OG7V_mag","rhs_mag_9k32_rocket"

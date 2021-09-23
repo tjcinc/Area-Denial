@@ -1,0 +1,1 @@
+#define _westpacks "B_LIB_GER_A_frame","B_LIB_GER_A_frame_kit","B_LIB_GER_A_frame_zeltbahn","B_LIB_GER_Backpack","B_LIB_GER_SapperBackpack_empty","B_LIB_GER_MedicBackpack_Empty","B_LIB_GER_Tonister34_cowhide","B_LIB_GER_LW_Paradrop","B_LIB_GER_Panzer_Empty","B_LIB_GER_Panzer"

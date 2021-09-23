@@ -1,0 +1,1 @@
+#define _vanuniformswest     "U_B_CombatUniform_mcam_tshirt","U_B_CTRG_Soldier_2_F","U_I_C_Soldier_Bandit_1_F","B_ViperLightHarness_khk_F","U_B_CTRG_3","U_O_R_Gorka_01_camo_F"

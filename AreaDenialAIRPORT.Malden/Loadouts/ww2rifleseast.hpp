@@ -1,0 +1,1 @@
+#define _rifleeast                                                                                 "LIB_M9130","LIB_M38","LIB_M44","LIB_M9130_Bayonet","LIB_SVT_40"

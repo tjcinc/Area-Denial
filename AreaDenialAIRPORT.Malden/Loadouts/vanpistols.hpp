@@ -1,0 +1,1 @@
+#define _pistols   "hgun_P07_F","hgun_Pistol_heavy_01_F","hgun_Pistol_heavy_02_F","hgun_Rook40_F","hgun_Pistol_01_F","hgun_Pistol_heavy_02_Yorris_F","hgun_ACPC2_F","hgun_Pistol_heavy_01_MRD_F"

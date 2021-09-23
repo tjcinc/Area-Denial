@@ -1,0 +1,413 @@
+#include "hud.h" 
+#include "S3_Admin.h"
+#include "MAD_welcome.h"
+#include "Loadouts\loadoutcfg.cpp"
+#include "Mission\params.hpp"
+#include "Mission\hints.cpp"
+enableDebugConsole=1;
+overViewPicture="Images\area.paa";
+overViewPictureLocked="Images\area.paa";
+loadScreen="Images\area.paa";
+briefing = 0;
+allowFunctionsLog = 1;
+corpseManagerMode = 1;
+corpseLimit = 10;
+corpseRemovalMinTime = 30;
+corpseRemovalMaxTime = 60;
+disabledAI= 1;
+joinUnassigned =1;
+onLoadName = Area Denial;
+onLoadMission = MAD_Title;
+overviewText = MAD_Title;
+Respawn = 3;
+RespawnDelay = 5;
+respawnDialog = 0;
+respawnOnStart = 1; 
+ReviveMode = 1;                         //0: disabled, 1: enabled, 2: controlled by player attributes
+ReviveUnconsciousStateMode = 0;         //0: basic, 1: advanced, 2: realistic
+ReviveRequiredTrait = 0;                //0: none, 1: medic trait is required 
+ReviveRequiredItems = 0;                //0: none, 1: medkit, 2: medkit or first aid kit 
+ReviveRequiredItemsFakConsumed = 0;     //0: first aid kit is not consumed upon revive, 1: first aid kit is consumed
+ReviveDelay = 3;                        //time needed to revive someone (in secs)
+ReviveMedicSpeedMultiplier = 2;         //speed multiplier for revive performed by medic
+ReviveForceRespawnDelay = 3;            //time needed to perform force respawn (in secs)
+ReviveBleedOutDelay = 60;              //unconscious state duration (in secs)
+showGPS=1;
+saving = 0;
+allowProfileGlasses = 0;
+
+class Header
+{
+	
+	gameType = TDM;
+	minPlayers =  1;	
+	maxPlayers = 30;	
+};
+
+
+
+respawnTemplates[] = {"MenuInventory","MenuPosition" };
+class CfgRespawnTemplates
+{
+	class MenuInventory  //need to test files to see if default ok !!!!
+	{		
+		onPlayerKilled = "Functions\MAD_MAD\fn_respawninventory.sqf"; 
+		onPlayerRespawn = "Functions\MAD_MAD\fn_respawninventory.sqf";
+	};	
+	class MenuPosition
+	{
+		onPlayerKilled = "Functions\MAD_MAD\fn_menuposition.sqf";
+		onPlayerRespawn = "Functions\MAD_MAD\fn_menuposition.sqf";
+	};
+};
+
+class CfgFunctions
+{
+	#include "Functions\MAD_fnc.h"
+	//#include "cau\extendedchat\CfgFunctions.cpp"
+	//#include "cau\userinputmenus\CfgFunctions.cpp"
+	
+};
+
+class Params 
+  {  	
+ 
+   
+	class MAD_CLASS
+	{
+	title = "Class Selection";
+	//values[] = {0,1,2,3,4};
+	values[] = {1};
+	default = 1;
+	texts[] = {VANILLA};
+	//texts[] = {WW2,VANILLA,RHS,CUP,VN};
+	};		
+	
+	class MAD_ZEUS
+	{
+	title = "Zeus on/off";
+	values[] = {0,1};
+	default = 0;
+	texts[] = {OFF,ON};
+	};	
+	
+	class MAD_AI_ON
+	{
+	    title = "AI off at start";
+		values[] = {0,1};
+		texts[] = {"On","Off"};
+		default = 0;
+	};
+	
+	class MAD_VD_DEF
+	{
+		title = "View Distance";
+		values[] = {450,800,1200,1600,2000};
+	default = 450;
+	texts[] = {450,800,1200,1600,2000};
+	};	
+	
+	class MAD_AI_Skill
+	{
+	    title = "AI Skill(higher is better)";
+		values[] = {1,2,3,4,5,6,7,8,9,10};
+		texts[] = {"1","2","3","4","5","6","7","8","9","10"};
+		default = 7;
+	};
+	
+	class MAD_groupAI
+	{
+		title = "Player Can group with AI";
+		values[] = {0,1};
+		texts[] = {"ON","OFF"};	
+		default = 0;
+	};
+    	
+	class MAD_Time
+	{
+		title = "Time Until End";
+		values[] = {1200,1500,1800,2100,2400};
+	default = 1800;
+	texts[] = {20mins,25ms,30mins,35mins,40mins};
+	};	
+	
+	class MAD_AreaType
+	{
+		title = "Area type";
+		values[] = {0,1,2};
+		default = 0;
+		texts[] = {Default, Circle, Rect};
+	};
+	
+	 class MAD_Size
+	{
+		title = "Define the size of the play area";
+		values[] = {75,125,150,175,200};
+	default = 125;
+	texts[] = {75 meters,125 meters,150 meters,175 meters,200 meters};
+	};
+	
+	class MAD_Tickets
+	{
+		title = "Amount of tickets for Each Team";
+		values[] = {25,50,75,175,200};
+	default = 50;
+	texts[] = {25,50,75,175,200};
+	};	
+    
+    class MAD_SUPPORT
+	{
+		title = "AI Off when players more than";
+		values[] = {0,1,2,3,4,5,6};
+		texts[] = {"0","1","2","3","4","5","6"};	
+		default = 5;
+	};
+	class MAD_NumberOfAIgroupsW
+	{
+		title = "West AI groups";
+		values[] = {1,2,3,4,5,6,7,8,9,10};
+		texts[] = {"1","2","3","4","5","6","7","8","9","10"};	
+		default = 10;
+	};
+
+	class MAD_NumberOfAIunitsPerGroupW
+	{
+		title = "West AI units per group";
+		values[] = {1,2,3,4};
+		texts[] = {"1","2","3","4"};
+		default = 1;
+		
+	};
+
+	class MAD_NumberOfAIgroupsE
+	{
+		title = "East AI groups(for vanilla classes)";
+		values[] = {1,2,3,4,5,6,7,8,9,10};
+		texts[] = {"1","2","3","4","5","6","7","8","9","10"};		
+		default = 10;
+	};
+
+	class MAD_NumberOfAIunitsPerGroupE
+	{
+		title = "East AI units per group (only need if switch class selection)";
+		values[] = {1,2,3,4,};
+		texts[] = {"1","2","3","4"};
+		default = 1;
+	};
+	class MAD_NumberOfAIgroupsR
+	{
+		title = "Resistance AI groups";
+		values[] = {1,2,3,4,5,6,7,8,9,10};
+		texts[] = {"1","2","3","4","5","6","7","8","9","10"};		
+		default = 10;
+	};
+
+	class MAD_NumberOfAIunitsPerGroupR
+	{
+		title = "Resistance AI units per group";
+		values[] = {1,2,3,4};
+		texts[] = {"1","2","3","4"};
+		default = 1;
+	};
+	
+			
+	class S3_AbandonTime
+	{
+		title = "Time Vehicles needs to be Abandoned before respawn";
+		values[] = {60,120,180,240,300,360,420,480,540,600,720,900,1200};
+	default = 240;
+	texts[] = {1 minute,2 minutes,3 minutes,4 minutes,5 minutes,6 minutes,7 minutes,8 minutes,9 minutes,10 minutes,12 minutes,15 minutes,20 minutes};
+	};
+	class S3_VehSpawnTime
+	{
+		title = "Delay between Abandon/Kill and Respawn";
+		values[] = {60,120,180,240,300,360,420,480,540,600,720,900,1200};
+	default = 60;
+	texts[] = {1 minute,2 minutes,3 minutes,4 minutes,5 minutes,6 minutes,7 minutes,8 minutes,9 minutes,10 minutes,12 minutes,15 minutes,20 minutes};
+	};
+	class S3_TankSpawnTime
+	{
+		title = "Tank Repawn Delay";
+		values[] = {60,120,180,240,300,360,420,480,540,600,720,900,1200};
+	default = 300;
+	texts[] = {1 minute,2 minutes,3 minutes,4 minutes,5 minutes,6 minutes,7 minutes,8 minutes,9 minutes,10 minutes,12 minutes,15 minutes,20 minutes};
+	};
+	class S3_HeliSpawnTime
+	{
+		title = "Heli Repawn Delay";
+		values[] = {60,120,180,240,300,360,420,480,540,600,720,900,1200};
+	default = 300;
+	texts[] = {1 minute,2 minutes,3 minutes,4 minutes,5 minutes,6 minutes,7 minutes,8 minutes,9 minutes,10 minutes,12 minutes,15 minutes,20 minutes};
+	};
+	class S3_PlaneSpawnTime
+	{
+		title = "Plane Repawn Delay";
+		values[] = {60,120,180,240,300,360,420,480,540,600,720,900,1200};
+	default = 300;
+	texts[] = {1 minute,2 minutes,3 minutes,4 minutes,5 minutes,6 minutes,7 minutes,8 minutes,9 minutes,10 minutes,12 minutes,15 minutes,20 minutes};
+	};
+	class S3_BasSpawnTime
+	{
+    title = "Mobile Respawn Delay ";
+	values[] = {60,120,180,240,300,360,420,480,540,600,720,900,1200};
+	default = 300;
+	texts[] = {1 minute,2 minutes,3 minutes,4 minutes,5 minutes,6 minutes,7 minutes,8 minutes,9 minutes,10 minutes,12 minutes,15 minutes,20 minutes};
+	};
+
+};
+
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "INVADERS WON";
+		subtitle = "Invaders held the sector till the end";
+		description = "";
+		pictureBackground = "";		
+		picture = "\A3\Data_F\Flags\Flag_blue_CO.paa";
+		pictureColor[] = {1,1,1,1};
+	};
+	
+	class End2
+	{
+		title = "ALLIES WON";
+		subtitle = "Allies held the sector till the end";
+		description = "";
+		pictureBackground = "";
+		picture = "\A3\Data_F\Flags\Flag_red_CO.paa";
+		pictureColor[] = {1,1,1,1};
+	};
+	class End3
+	{
+		title = "ALLIES WON";
+		subtitle = "ALLIES DESTROYED INVADERS";
+		description = "";
+		pictureBackground = "";		
+		picture = "\A3\Data_F\Flags\Flag_blue_CO.paa";
+		pictureColor[] = {1,1,1,1};
+	};
+	
+	class End4
+	{
+		title = "INVADERS WON";
+		subtitle = "INVADERS DESTROYED ALLIES";
+		description = "";
+		pictureBackground = "";
+		picture = "\A3\Data_F\Flags\Flag_red_CO.paa";
+		pictureColor[] = {1,1,1,1};
+	};
+	class End5
+	{
+		title = "WEST WON";
+		subtitle = "WEST held the sector till the end";
+		description = "";
+		pictureBackground = "";		
+		picture = "\A3\Data_F\Flags\Flag_blue_CO.paa";
+		pictureColor[] = {1,1,1,1};
+	};
+	
+	class End6
+	{
+		title = "EAST WON";
+		subtitle = "EAST held the sector till the end";
+		description = "";
+		pictureBackground = "";
+		picture = "\A3\Data_F\Flags\Flag_red_CO.paa";
+		pictureColor[] = {1,1,1,1};
+	};
+	class End7
+	{
+		title = "EAST WON";
+		subtitle = "EAST DESTROYED WEST";
+		description = "";
+		pictureBackground = "";		
+		picture = "\A3\Data_F\Flags\Flag_blue_CO.paa";
+		pictureColor[] = {1,1,1,1};
+	};
+	
+	class End8
+	{
+		title = "WEST WON";
+		subtitle = "WEST DESTROYED EAST";
+		description = "";
+		pictureBackground = "";
+		picture = "\A3\Data_F\Flags\Flag_red_CO.paa";
+		pictureColor[] = {1,1,1,1};
+	};
+	class End9
+	{
+		title = "Please Choose a Different Slot";
+		subtitle = "l2p";
+		description = "";
+		pictureBackground = "";
+		picture = "A3\ui_f\data\GUI\Cfg\Debriefing\endDefault_ca.paa";
+		pictureColor[] = {1,1,1,1};
+	};
+	class epicFail
+	{
+		title = "ALL LOSE";
+		subtitle = "BECAUSE";
+		description = "";
+		pictureBackground = "";
+		picture = "A3\ui_f\data\GUI\Cfg\Debriefing\endDefault_ca.paa";
+		pictureColor[] = {1,1,1,1};
+	};
+};
+
+//#include "cau\userinputmenus\systems\_macros.inc"
+//#include "cau\userinputmenus\systems\_defines.inc"
+//#include "cau\userinputmenus\controls.cpp"
+//#include "cau\userinputmenus\systems\displayColorPicker.cpp"
+//#include "cau\userinputmenus\systems\displayGuiMessage.cpp"
+//#include "cau\userinputmenus\systems\displayListbox.cpp"
+//#include "cau\userinputmenus\systems\displayListboxMulti.cpp"
+//#include "cau\userinputmenus\systems\displayProgressBar.cpp"
+//#include "cau\userinputmenus\systems\displaySlider.cpp"
+//#include "cau\userinputmenus\systems\displayText.cpp"
+//#include "cau\userinputmenus\systems\displayTextMulti.cpp"
+
+//class RscTitles {
+	// Add the following line inside class RscTitles
+//	#include "cau\extendedchat\RscTitles.cpp"
+//};
+
+//class CfgEmoji {
+	// Add the following line inside class CfgEmoji
+//	#include "cau\extendedchat\emojipack\config.cpp"
+//};
+
+// OPTIONAL CONFIGURATION SETTINGS
+
+// Enables the extended chat mod
+//CAU_xChat_enabled = 1; // 0 - disabled, 1 - enabled (default)
+
+// Enables the use of emojis in chat. Automatically disabled if no emojis are found on the client
+//CAU_xChat_emojis = 1; // 0 - disabled, 1 - enabled (default)
+
+// Toggle "<Name> connected" logs when a player loads into mission
+//CAU_xChat_connectMessages = 1; // 0 - disabled, 1 - enabled (default)
+
+// Toggle "<Name> disconnected" logs when a player leaves the mission
+//CAU_xChat_disconnectMessages = 1; // 0 - disabled, 1 - enabled (default)
+
+// Toggle "<Name1> was killed by <Name2>" and "<Name> was killed" when a player dies
+//CAU_xChat_deathMessages = 0; // 0 - disabled, 1 - enabled (default)
+
+// Enables mentioning groups
+//CAU_xChat_mentionGroups = 1; // 0 - disabled, 1 - enabled (groups of player's side, default), 2 - enabled (all groups)
+
+//Enables whisper command. Allows sending private chat messages to other players, groups and roles
+//CAU_xChat_whisperCommand = 1; // 0 - disabled, 1 - enabled (default)
+
+// System logs printed to chat when the player loads into the mission
+//CAU_xChat_MOTD[]={
+//  {delay before printing,message}
+//    {4,"Welcome to Area Denial"},
+//    {5,"Press F1 in game for Help"},
+//    {6,"Join our Discord from the Help Menu :) "},
+//	{7,"Take and Hold The Center Zone"},
+//	{8,"PVP(E)TEAM DEATHMATCH "},
+//	{9,"KILL OR BE KILLED ;)"},
+//	{10,"Weekly Sunday Night Game (N.A.) :) "}
+//};
+

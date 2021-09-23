@@ -1,0 +1,1 @@
+#define _vnrockets                                                                                                                                                                   "vn_sa7_mag","vn_sa7b_mag","vn_rpg2_mag","vn_rpg7_mag","vn_m127_mag","vn_m128_mag","vn_m129_mag"

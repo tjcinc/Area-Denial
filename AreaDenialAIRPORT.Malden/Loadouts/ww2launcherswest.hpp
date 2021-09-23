@@ -1,0 +1,1 @@
+#define _launcherwest                                            "LIB_PzFaust_30m","LIB_RPzB","LIB_PzFaust_60m","LIB_Faustpatrone","LIB_RPzB_w","LIB_PzFaust_30m_used","LIB_PzFaust_60m_used","LIB_Faustpatrone_used"

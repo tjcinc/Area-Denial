@@ -1,0 +1,1 @@
+#define _vanuniformseast "U_BG_Guerilla2_1","U_I_C_Soldier_Bandit_2_F","U_BG_Guerilla2_1","U_O_SpecopsUniform_ocamo","U_BG_Guerilla2_1","U_O_R_Gorka_01_camo_F"

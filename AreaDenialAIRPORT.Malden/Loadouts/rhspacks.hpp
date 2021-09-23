@@ -1,0 +1,1 @@
+#define _rhspacks       "rhs_rpg_at","rhsusf_assault_eagleaiii_ucp","rhs_rpg_empty","B_rhsusf_B_BACKPACK","rhsusf_assault_eagleaiii_coy","rhsusf_assault_eagleaiii_ocp","rhsusf_falconii","rhs_assault_umbts","rhs_assault_umbts_engineer_empty","rhsusf_assault_eagleaiii_ocp_maaws","B_Carryall_cbr"

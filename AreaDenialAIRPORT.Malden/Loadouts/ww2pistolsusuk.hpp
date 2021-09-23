@@ -1,0 +1,1 @@
+#define _pistolusuk                                                                                         "LIB_FLARE_PISTOL","LIB_Colt_M1911","LIB_Webley_mk6","LIB_Webley_Flare","LIB_Welrod_mk1"

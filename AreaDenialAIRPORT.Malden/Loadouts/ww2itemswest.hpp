@@ -1,0 +1,1 @@
+#define _itemswest "ItemMap","FirstAidKit","LIB_Binocular_GER","LIB_GER_ItemWatch","LIB_GER_ItemCompass_deg","LIB_ToolKit","LIB_G41_Bayonet","LIB_ACC_K98_Bayo"
